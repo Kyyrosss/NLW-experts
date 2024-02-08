@@ -6,7 +6,7 @@ const perguntas = [
       pergunta: "Qual é a sintaxe correta para comentar no JavaScript?",
       respostas: [
         "// Este é um comentário",
-        "<!-- Este é um comentário -->",
+        "<!-- Este é um comentario -->",
         "/* Este é um comentário */"
       ],
       correta: 0
