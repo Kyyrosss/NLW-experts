@@ -1,98 +1,98 @@
 document.addEventListener("DOMContentLoaded", (event) => {
     console.log("DOM fully loaded and parsed");
     // Array das perguntas/respostas
-const perguntas = [
-    {
-      pergunta: "Qual é a sintaxe correta para comentar no JavaScript?",
-      respostas: [
-        "// Este é um comentário",
-        "<!-- Este é um comentario -->",
-        "/* Este é um comentário */"
-      ],
-      correta: 0
-    },
-    {
-      pergunta: "Qual destes métodos é usado para declarar uma variável em JavaScript?",
-      respostas: [
-        "var",
-        "declare",
-        "variable"
-      ],
-      correta: 0
-    },
-    {
-      pergunta: "Qual é a maneira correta de escrever um array em JavaScript?",
-      respostas: [
-        "var colors = 'red', 'green', 'blue'",
-        "var colors = ['red', 'green', 'blue']",
-        "var colors = {'red', 'green', 'blue'}"
-      ],
-      correta: 1
-    },
-    {
-      pergunta: "O que o método 'getElementById()' faz no JavaScript?",
-      respostas: [
-        "Seleciona um elemento pelo nome da classe",
-        "Seleciona um elemento pelo ID",
-        "Seleciona um elemento pelo nome da tag"
-      ],
-      correta: 1
-    },
-    {
-      pergunta: "Qual destas declarações é usada para criar uma função em JavaScript?",
-      respostas: [
-        "function: myFunction()",
-        "function = myFunction()",
-        "function myFunction()"
-      ],
-      correta: 2
-    },
-    {
-      pergunta: "O que o operador '===' faz em JavaScript?",
-      respostas: [
-        "Atribuição",
-        "Comparação estrita (valor e tipo)",
-        "Comparação solta (apenas valor)"
-      ],
-      correta: 1
-    },
-    {
-      pergunta: "Qual método é usado para imprimir algo no console do navegador?",
-      respostas: [
-        "console.print()",
-        "console.log()",
-        "print()"
-      ],
-      correta: 1
-    },
-    {
-      pergunta: "Qual função é usada para converter uma string em um número inteiro em JavaScript?",
-      respostas: [
-        "parseInt()",
-        "stringToNumber()",
-        "toNumber()"
-      ],
-      correta: 0
-    },
-    {
-      pergunta: "Qual destes operadores é usado para concatenar strings em JavaScript?",
-      respostas: [
-        "&",
-        "+",
-        "|"
-      ],
-      correta: 1
-    },
-    {
-      pergunta: "Qual método é usado para remover o último elemento de um array em JavaScript?",
-      respostas: [
-        "pop()",
-        "removeLast()",
-        "deleteLast()"
-      ],
-      correta: 0
-    }
-  ];
+    const perguntas = [
+      {
+        pergunta: "Qual grupo é conhecido como 'Reis do Kpop'?",
+        respostas: [
+          "EXO",
+          "BTS",
+          "BIGBANG"
+        ],
+        correta: 2
+      },
+      {
+        pergunta: "Qual grupo debutou com a música 'Boy With Luv'?",
+        respostas: [
+          "BLACKPINK",
+          "TWICE",
+          "BTS"
+        ],
+        correta: 2
+      },
+      {
+        pergunta: "Qual é o fandom de BTS?",
+        respostas: [
+          "ARMY",
+          "BLINK",
+          "ONCE"
+        ],
+        correta: 0
+      },
+      {
+        pergunta: "Quem é conhecido como 'Rei do Kpop'?",
+        respostas: [
+          "G-Dragon",
+          "Jungkook",
+          "Kai"
+        ],
+        correta: 0
+      },
+      {
+        pergunta: "Qual grupo debutou com a música 'DDU-DU DDU-DU'?",
+        respostas: [
+          "BTS",
+          "BLACKPINK",
+          "EXO"
+        ],
+        correta: 1
+      },
+      {
+        pergunta: "Qual é o nome do líder do grupo EXO?",
+        respostas: [
+          "Suho",
+          "Baekhyun",
+          "Chanyeol"
+        ],
+        correta: 0
+      },
+      {
+        pergunta: "Qual é o grupo de Kpop com mais inscritos no YouTube?",
+        respostas: [
+          "BLACKPINK",
+          "BTS",
+          "TWICE"
+        ],
+        correta: 1
+      },
+      {
+        pergunta: "Qual grupo é conhecido como 'Rainhas do Kpop'?",
+        respostas: [
+          "TWICE",
+          "BLACKPINK",
+          "Red Velvet"
+        ],
+        correta: 1
+      },
+      {
+        pergunta: "Qual é o nome do fandom de BLACKPINK?",
+        respostas: [
+          "BLINK",
+          "ARMY",
+          "ONCE"
+        ],
+        correta: 0
+      },
+      {
+        pergunta: "Qual grupo é conhecido como 'Princesas do Kpop'?",
+        respostas: [
+          "TWICE",
+          "Red Velvet",
+          "GFRIEND"
+        ],
+        correta: 0
+      }
+    ];
   
   const corretas = new Set()
   const totalDePerguntas = perguntas.length
@@ -123,6 +123,7 @@ const perguntas = [
    corretas.add(item)
   
    }
+   mostrarTotal.textContent = corretas.size + ' de ' + totalDePerguntas
   }
   
    
